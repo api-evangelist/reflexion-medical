@@ -1,0 +1,68 @@
+generated: '2026-08-02'
+method: searched
+source: https://reflexion.com/legal/compliance-declaration/
+summary: 'RefleXion Medical is a medical device manufacturer with no published API
+  surface, so no API/interface standards apply. What the company does publish is a
+  healthcare-industry compliance declaration and FDA device clearances, recorded here
+  as the real, evidenced conformance posture.'
+standards:
+- id: oig-compliance-program-guidance
+  name: OIG Compliance Program Guidance for Pharmaceutical Manufacturers (HHS Office
+    of Inspector General)
+  conforms: true
+  evidence: 'Compliance declaration states the program is modeled on the OIG Compliance
+    Program Guidance for Pharmaceutical Manufacturers'
+  source: https://reflexion.com/legal/compliance-declaration/
+- id: advamed-code-of-ethics
+  name: AdvaMed Code of Ethics on Interactions with U.S. Health Care Professionals
+    (June 1, 2022)
+  conforms: true
+  evidence: 'Compliance declaration states adherence to the AdvaMed Code of Ethics
+    (June 1, 2022 edition)'
+  source: https://reflexion.com/legal/compliance-declaration/
+- id: california-health-safety-code-119400
+  name: California Health & Safety Code sections 119400-119402
+  conforms: true
+  evidence: 'Compliance declaration asserts compliance and publishes the annual $75.00
+    spending cap on hospitality, promotional and educational items for California health
+    care professionals'
+  source: https://reflexion.com/legal/compliance-declaration/
+- id: fda-510k-clearance
+  name: US FDA 510(k) clearance
+  conforms: true
+  evidence: 'RefleXion X1 cleared for SRS, SBRT and IMRT in 2020; SCINTIX biology-guided
+    radiotherapy cleared 2023-02-02 for tumors in the lung or bone'
+  source: https://reflexion.com/our-company/
+- id: fda-breakthrough-device-designation
+  name: US FDA Breakthrough Device Designation
+  conforms: true
+  evidence: 'Breakthrough Device Designation granted in 2022 for biology-guided radiotherapy
+    targeting lung tumors'
+  source: https://reflexion.com/our-company/
+- id: iso-13485
+  name: ISO 13485 medical device quality management systems
+  conforms: null
+  evidence: 'Not published on the public site; not asserted either way'
+- id: oauth2
+  conforms: false
+  evidence: 'No public API, no securitySchemes, no OAuth documentation found'
+- id: openid-connect
+  conforms: false
+  evidence: '/.well-known/openid-configuration returned 404 on reflexion.com'
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: 'No OpenAPI or error contract published'
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: '/.well-known/security.txt returned 404 on reflexion.com'
+- id: fhir-r4
+  conforms: false
+  evidence: 'No FHIR endpoint, resource shapes or documentation found; RefleXion is
+    a therapy-delivery device manufacturer, not a health-data platform'
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+  - https://reflexion.com/legal/compliance-declaration/
+  - https://reflexion.com/our-company/
+  - https://reflexion.com/.well-known/security.txt
+  - https://reflexion.com/.well-known/openid-configuration

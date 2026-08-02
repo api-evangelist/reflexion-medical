@@ -1,0 +1,50 @@
+generated: '2026-08-02'
+method: probed
+source: live GET of /.well-known/* and root discovery paths on reflexion.com
+host: https://reflexion.com
+found: 0
+note: 'No /.well-known/ discovery documents are published. Every probe returned HTTP
+  404 with an HTML body (the WordPress 404 template), so there is no WellKnown, SecurityTxt
+  or APICatalog pointer wired in apis.yml. Recorded so later runs do not re-probe blind.'
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /swagger.json
+  status: 404
+- path: /api-docs
+  status: 404
+subdomains_probed:
+- host: api.reflexion.com
+  status: 0
+  note: DNS does not resolve
+- host: developer.reflexion.com
+  status: 0
+  note: DNS does not resolve
+- host: docs.reflexion.com
+  status: 0
+  note: DNS does not resolve
+- host: status.reflexion.com
+  status: 0
+  note: DNS does not resolve
+- host: trust.reflexion.com
+  status: 0
+  note: DNS does not resolve
+x-evidence:
+  fetched: '2026-08-02'
+  method: curl -L -o /dev/null -w '%{http_code}'

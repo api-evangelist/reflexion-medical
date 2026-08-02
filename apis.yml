@@ -1,23 +1,113 @@
 aid: reflexion-medical
 name: RefleXion Medical
-description: 'RefleXion Medical is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'RefleXion Medical is a privately held therapeutic oncology company headquartered
+  in Hayward, California, founded in 2009 by Sam Mazin and Akshay Nanduri around the
+  biology-guided radiotherapy (BgRT) concept conceived at Stanford University in 2007.
+  The company designs, manufactures and commercializes the RefleXion X1 radiotherapy
+  platform and SCINTIX biology-guided radiotherapy, which uses onboard PET detectors
+  to sense emissions from an injected radiopharmaceutical and autonomously direct external-beam
+  radiotherapy delivery with sub-second latency. The RefleXion X1 received FDA clearance
+  for SRS, SBRT and IMRT in 2020, and SCINTIX therapy was FDA cleared in February 2023
+  for treating tumors in the lung or bone arising from primary and metastatic cancer.
+  RefleXion has raised more than $500 million from investors including TPG''s The Rise
+  Fund, KCK Group, PSP Investments, Sofinnova, Pfizer Ventures and Johnson & Johnson
+  Innovation. RefleXion is a medical device manufacturer rather than a software vendor
+  and publishes no public developer portal, API documentation, SDKs or machine-readable
+  API contract.'
+image: https://reflexion.com/wp-content/uploads/2021/08/rx-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/reflexion-medical/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
+x-api-surface: none-published
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Company
+- Healthcare
+- Medical Devices
+- Oncology
+- Radiation Oncology
+- Radiotherapy
+- Medical Imaging
+- Cancer Care
 apis: []
+x-enrichment:
+  date: '2026-08-02'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/reflexion-medical-domain-security.yml
 - type: Website
+  url: https://reflexion.com/
+- type: About
+  url: https://reflexion.com/our-company/
+- type: Products
+  url: https://reflexion.com/scintix-therapy/
+- type: Research
+  url: https://reflexion.com/research/
+- type: Resources
+  url: https://reflexion.com/scintix-therapy/resources/
+- type: Blog
+  url: https://reflexion.com/our-company/blog/
+- type: BlogFeeds
+  url: https://reflexion.com/feed/
+- type: Newsroom
+  url: https://reflexion.com/our-company/newsroom/
+- type: PressReleases
+  url: https://reflexion.com/our-company/in-the-press/
+- type: News
+  url: https://reflexion.com/our-company/in-the-news/
+- type: Events
+  url: https://reflexion.com/our-company/events/
+- type: Media
+  url: https://reflexion.com/our-company/media-resources/
+- type: Videos
+  url: https://reflexion.com/our-company/video-downloads/
+- type: Newsletter
+  url: https://reflexion.com/newsletter/
+- type: Careers
+  url: https://reflexion.com/our-company/careers/
+- type: Team
+  url: https://reflexion.com/our-company/leadership/
+- type: Support
+  url: https://reflexion.com/contact/
+- type: Contact
+  url: https://reflexion.com/contact/
+- type: Legal
+  url: https://reflexion.com/legal/
+- type: TermsOfService
+  url: https://reflexion.com/legal/terms-of-use/
+- type: PrivacyPolicy
+  url: https://reflexion.com/legal/privacy-policy/
+- type: Compliance
+  url: https://reflexion.com/legal/compliance-declaration/
+- type: Patents
+  url: https://reflexion.com/legal/patents/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/reflexion-medical/
+- type: Twitter
+  url: https://twitter.com/reflexionmed
+- type: Youtube
+  url: https://www.youtube.com/c/reflexionmedical
+- type: Facebook
+  url: https://www.facebook.com/reflexionmedical/
+- type: Instagram
+  url: https://www.instagram.com/reflexionbgrt/
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/reflexion-medical
+- type: Investors
   url: https://forgeglobal.com/reflexion-medical_stock/
+- type: Conformance
+  url: conformance/reflexion-medical-conformance.yml
+- type: LLMsTxt
+  url: llms/reflexion-medical-llms.txt

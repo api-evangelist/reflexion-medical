@@ -1,0 +1,50 @@
+# RefleXion Medical
+
+> RefleXion Medical is a privately held therapeutic oncology company in Hayward, California, founded in 2009 by Sam Mazin and Akshay Nanduri. It builds the RefleXion X1 radiotherapy platform and SCINTIX biology-guided radiotherapy, which uses onboard PET detectors to sense emissions from an injected radiopharmaceutical and autonomously direct external-beam radiotherapy with sub-second latency. RefleXion is a medical device manufacturer, not a software vendor: it publishes no developer portal, no API documentation, no SDKs and no machine-readable API contract.
+
+## APIs
+
+- No public API. As of 2026-08-02 no OpenAPI, AsyncAPI, GraphQL, MCP or A2A surface is published on reflexion.com, and api./developer./docs.reflexion.com do not resolve.
+
+## Company
+
+- [Our Company](https://reflexion.com/our-company/): Company overview, history, founders, funding.
+- [Leadership](https://reflexion.com/our-company/leadership/): Executive team.
+- [Careers](https://reflexion.com/our-company/careers/): Open roles.
+- [Contact](https://reflexion.com/contact/): Contact form and phone numbers.
+
+## Technology
+
+- [SCINTIX Therapy](https://reflexion.com/scintix-therapy/): Biology-guided radiotherapy platform overview.
+- [For Clinicians](https://reflexion.com/scintix-therapy/clinicians/): Clinical use of SCINTIX therapy.
+- [Cancer Centers](https://reflexion.com/scintix-therapy/cancer-centers/): Centers offering SCINTIX therapy.
+- [Resources](https://reflexion.com/scintix-therapy/resources/): Product and therapy resources.
+- [Research](https://reflexion.com/research/): Research program.
+- [Scientific Evidence](https://reflexion.com/scientific-evidence/): Published clinical and scientific evidence.
+- [RefleXion Academy](https://reflexion.com/academy/): Education program.
+
+## News
+
+- [Blog](https://reflexion.com/our-company/blog/): Company blog.
+- [RSS Feed](https://reflexion.com/feed/): Site RSS feed.
+- [Newsroom](https://reflexion.com/our-company/newsroom/): Press releases and announcements.
+- [In the News](https://reflexion.com/our-company/in-the-news/): Third-party coverage.
+- [Events](https://reflexion.com/our-company/events/): Conference and event schedule.
+- [Media Resources](https://reflexion.com/our-company/media-resources/): Logos, product photography, video downloads.
+
+## Legal
+
+- [Legal](https://reflexion.com/legal/): Legal index.
+- [Terms of Use](https://reflexion.com/legal/terms-of-use/)
+- [Privacy Policy](https://reflexion.com/legal/privacy-policy/)
+- [Compliance Declaration](https://reflexion.com/legal/compliance-declaration/): OIG guidance, AdvaMed Code of Ethics, California Health & Safety Code sections 119400-119402.
+- [Patents](https://reflexion.com/legal/patents/)
+- [Instructions For Use](https://reflexion.com/legal/ifu/)
+
+## Artifacts
+
+- [Conformance](conformance/reflexion-medical-conformance.yml): Regulatory and standards posture, searched from the compliance declaration and FDA clearances.
+- [Domain security](security/reflexion-medical-domain-security.yml): Probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC.
+- [Well-known probe log](well-known/reflexion-medical-well-known.yml): Negative discovery results, recorded.
+
+<!-- generated: 2026-08-02 | method: generated | source: apis.yml + reflexion.com public site -->
