@@ -2,6 +2,20 @@
   "repo": "reflexion-medical",
   "feeds": [
     {
+      "source": "https://reflexion.com/scintix-therapy/resources/feed/",
+      "feed_url": "https://reflexion.com/scintix-therapy/resources/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://reflexion.com/our-company/blog/feed/",
+      "feed_url": "https://reflexion.com/our-company/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://reflexion.com/scintix-therapy/resources/",
       "feed_url": "https://reflexion.com/scintix-therapy/resources/feed/",
       "title": "",
@@ -12,10 +26,10 @@
       "source": "https://reflexion.com/our-company/blog/",
       "feed_url": "https://reflexion.com/our-company/blog/feed/",
       "title": "",
-      "saved": 10,
+      "saved": 0,
       "method": "discovered"
     }
   ],
   "post_count": 10,
-  "fetched": "2026-08-15T12:11:08Z"
+  "fetched": "2026-08-22T20:20:02Z"
 }
