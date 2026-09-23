@@ -3,32 +3,9 @@ method: probed
 source: live GET of /.well-known/* and root discovery paths on reflexion.com
 host: https://reflexion.com
 found: 0
-note: 'No /.well-known/ discovery documents are published. Every probe returned HTTP
-  404 with an HTML body (the WordPress 404 template), so there is no WellKnown, SecurityTxt
-  or APICatalog pointer wired in apis.yml. Recorded so later runs do not re-probe blind.'
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-- path: /.well-known/agent-card.json
-  status: 404
-- path: /.well-known/agent.json
-  status: 404
-- path: /llms.txt
-  status: 404
-- path: /openapi.json
-  status: 404
-- path: /swagger.json
-  status: 404
-- path: /api-docs
-  status: 404
+note: No /.well-known/ discovery documents are published. Every probe returned HTTP 404 with an HTML body
+  (the WordPress 404 template), so there is no WellKnown, SecurityTxt or APICatalog pointer wired in apis.yml.
+  Recorded so later runs do not re-probe blind.
 subdomains_probed:
 - host: api.reflexion.com
   status: 0
@@ -48,3 +25,25 @@ subdomains_probed:
 x-evidence:
   fetched: '2026-08-02'
   method: curl -L -o /dev/null -w '%{http_code}'
+hosts:
+- host: https://reflexion.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
